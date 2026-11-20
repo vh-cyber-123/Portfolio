@@ -91,7 +91,7 @@ nav.sections a:hover { color: var(--fg); }
 :root[data-theme="dark"] .band { opacity: .45; }
 .hero .wrap { position: relative; padding-block: 36px 16px; display: grid; gap: 16px; }
 .hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 7.6vw, 80px); line-height: .98; letter-spacing: -0.04em; margin: 0; }
-.lede { font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5; color: var(--muted); max-width: 70ch; margin: 0; text-wrap: pretty; }
+.lede { font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5; color: var(--muted); max-width: none; margin: 0; text-wrap: wrap; }
 .lede strong { color: var(--fg); font-weight: 600; }
 .strip { margin: 8px 0 0; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
 .strip-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
@@ -437,11 +437,11 @@ dialog::backdrop { background: var(--scrim); }
 
   <section class="block compact" id="academics" aria-labelledby="acad-h">
     <div class="wrap">
-      <div class="sec-head"><h2 id="acad-h">Academics</h2></div>
+      <div class="sec-head"><h2 id="acad-h">Academics &amp; certifications</h2></div>
       <div class="edu-grid">
-        <div class="edu-item"><span class="label">MBA '27 · Ithaca · NYC</span><b>Cornell SC Johnson College of Business</b><span>Merit scholar · Finance &amp; Strategy core · Applied AI Practicum · Ezra Ventures</span></div>
+        <div class="edu-item"><span class="label">MBA '27 · Ithaca · NYC</span><b>Cornell SC Johnson College of Business</b><span>Merit scholar · Applied AI Practicum · Finance &amp; Tech club lead</span></div>
         <div class="edu-item"><span class="label">ACCA · United Kingdom</span><b>Chartered Certified Accountant</b><span>All-India rank 1 · Global rank 18 · Audit &amp; Assurance, Financial Management, IFRS</span></div>
-        <div class="edu-item"><span class="label">Fellow '25 · Perplexity</span><b>Perplexity AI Business Fellow</b><span>Frontier AI adoption for Goldman Treasury's AI committee; beta-tested Comet.</span></div>
+        <div class="edu-item"><span class="label">Fellow '25 · Perplexity</span><b>Perplexity AI Business Fellow</b><span>Frontier AI adoption for enterprises; beta-tested Comet.</span></div>
         <div class="edu-item"><span class="label">B.Com '21 · Bengaluru</span><b>St Joseph's College of Commerce</b><span>Rank 1 of 300 · Finance &amp; International Business · Director, Entrepreneurship Cell</span></div>
       </div>
     </div>
@@ -514,9 +514,9 @@ dialog::backdrop { background: var(--scrim); }
   var PLANE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>';
   var CH = [
     { t: "Overview", line: "Experience spanning institutional banking, venture capital and FinTech M&A.",
-      cards: [["NYC ↔ BLR", "Cross-border operator across two financial hubs."], ["Global impact", "Managed clients across the US, Europe and Singapore."], ["Cornell MBA", "Class of 2027."]] },
+      cards: [["NYC ↔ BLR", "Cross-border operator across two financial hubs."], ["Global exposure", "Managed clients across the US, Europe and Singapore."], ["Cornell MBA", "Class of 2027."]] },
     { t: "Finance core", line: "Top-ranked chartered accountant with a finance degree.",
-      cards: [["ACCA", "All-India rank 1 · Global rank 18."], ["Rank 1", "Out of 300, finance major."], ["Entrepreneurship Cell", "Finance and PR Director."]] },
+      cards: [["ACCA", "All-India rank 1 · Global rank 18."], ["Rank 1", "Out of 300, finance major."], ["Financial institutions", "Banking, audit and FI experience across Goldman Sachs and J.P. Morgan."]] },
     { t: "Execution", line: "Measurable outcomes across established organizations.",
       cards: [["$470mm+", "Transactions executed; 140+ clients managed; Analyst → Senior Analyst in 10 months.", "Goldman Sachs"],
               ["Published thesis", "1,600+ unicorns analyzed; covered by Fortune.", "Antler"],
