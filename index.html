@@ -132,6 +132,8 @@ nav.sections a:hover { color: var(--fg); }
 .j-item b { font-family: var(--mono); font-weight: 500; font-size: clamp(17px, 2vw, 20px); color: var(--accent-ink); letter-spacing: -0.02em; }
 .j-item span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
 .j-stat small { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--soft); }
+.j-link { color: inherit; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+.j-link:hover { border-bottom-color: var(--accent); }
 .j-stat span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
 .fade-swap { transition: opacity .2s ease, transform .2s ease; }
 .fade-swap.out { opacity: 0; transform: translateY(4px); }
@@ -266,8 +268,9 @@ dialog::backdrop { background: var(--scrim); }
     <div class="right">
     <nav class="sections" aria-label="Sections">
       <ul>
-        <li><a href="#next">Next</a></li>
-        <li><a href="#work">Experience</a></li>
+        <li><a href="#top">Intro</a></li>
+        <li><a href="#select-work">Select work</a></li>
+        <li><a href="#work">Professional</a></li>
         <li><a href="#academics">Academics</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -286,7 +289,7 @@ dialog::backdrop { background: var(--scrim); }
   <div class="hero">
     <div class="band" aria-hidden="true"></div>
     <div class="wrap hero-anim" id="hero">
-      <p class="lede stagger"><strong>Investor &amp; operator</strong> with experience across FinTech, digital assets and AI. ACCA-certified accountant. Launched a blockchain product at Goldman Sachs, invested in AI-native founders at Antler, and advised on FinTech M&amp;A at J.P. Morgan. Cornell MBA '27, Finance, AI &amp; Strategy.</p>
+      <p class="lede stagger"><strong>Investor &amp; operator</strong> with experience across FinTech, digital assets and AI. ACCA-certified accountant. Managed institutional partnerships at Goldman Sachs, invested in AI-native founders at Antler, and advised on FinTech M&amp;A at J.P. Morgan. Cornell MBA '27, Finance, AI &amp; Strategy.</p>
       <div class="strip stagger" role="group" aria-label="Focus"><div class="strip-track"><ul><li>NYC · BLR</li><li>FinTech</li><li>Digital assets</li><li>Institutional partnerships</li><li>Applied AI</li></ul><ul aria-hidden="true"><li>NYC · BLR</li><li>FinTech</li><li>Digital assets</li><li>Institutional partnerships</li><li>Applied AI</li></ul></div></div>
     </div>
   </div>
@@ -309,7 +312,7 @@ dialog::backdrop { background: var(--scrim); }
     </div>
   </section>
 
-  <section class="block tint" aria-labelledby="sel-h">
+  <section class="block tint" id="select-work" aria-labelledby="sel-h">
     <div class="wrap">
       <div class="sec-head"><h2 id="sel-h">Select work</h2></div>
       <div class="selected">
@@ -455,7 +458,7 @@ dialog::backdrop { background: var(--scrim); }
         <a class="btn icon" href="mailto:vh245@cornell.edu" aria-label="Email Vijetha Hegde">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         </a>
-        <a class="btn icon" href="https://www.linkedin.com/search/results/people/?keywords=Vijetha%20Hegde" target="_blank" rel="noopener" aria-label="Vijetha Hegde on LinkedIn">
+        <a class="btn icon" href="https://www.linkedin.com/in/vijethahegde/" target="_blank" rel="noopener" aria-label="Vijetha Hegde on LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         </a>
       </div>
@@ -519,7 +522,7 @@ dialog::backdrop { background: var(--scrim); }
       cards: [["ACCA", "All-India rank 1 · Global rank 18."], ["Rank 1", "Out of 300, finance major."], ["Financial institutions", "Banking, audit and FI experience across Goldman Sachs and J.P. Morgan."]] },
     { t: "Execution", line: "Measurable outcomes across established organizations.",
       cards: [["$470mm+", "Transactions executed; 140+ clients managed; Analyst → Senior Analyst in 10 months.", "Goldman Sachs"],
-              ["Published thesis", "1,600+ unicorns analyzed; covered by Fortune.", "Antler"],
+              ["Published thesis", "1,600+ unicorns analyzed; covered by Fortune.", "Antler", "https://drive.google.com/file/d/1fjydTEuceercUgFAryERxJDfjTfsidTd/view"],
               ["$9.0bn+", "Deal execution experience; 100+ FinTech companies reviewed.", "J.P. Morgan, NY"]] }
   ];
   var idx = 0;
@@ -552,7 +555,8 @@ dialog::backdrop { background: var(--scrim); }
     } else c.cards.forEach(function (k) {
       var d = document.createElement('div'); d.className = 'j-stat';
       if (k[2]) { var o = document.createElement('small'); o.textContent = k[2]; d.appendChild(o); }
-      var b = document.createElement('b'); b.textContent = k[0];
+      var b = document.createElement('b');
+      if (k[3]) { var a = document.createElement('a'); a.href = k[3]; a.target = '_blank'; a.rel = 'noopener'; a.className = 'j-link'; a.textContent = k[0] + ' ↗'; b.appendChild(a); } else b.textContent = k[0];
       var sp = document.createElement('span'); sp.textContent = k[1];
       d.appendChild(b); d.appendChild(sp); stats.appendChild(d);
     });
