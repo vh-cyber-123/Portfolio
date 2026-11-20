@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Vijetha Hegde: investor and operator across FinTech, digital assets and AI. Cornell MBA '27.">
+<meta property="og:title" content="Vijetha Hegde">
+<meta property="og:description" content="Investor and operator across FinTech, digital assets and AI. Cornell MBA '27.">
+<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Vijetha Hegde</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow ledger column; mono date/figure gutter on the left of each entry, like a trial balance */
+:root {
+  --bg: #0a0d12;
+  --surface: #11161e;
+  --surface-2: #161c26;
+  --line: #222a35;
+  --fg: #e7e9ec;
+  --muted: #8b95a3;
+  --accent: #c9a86a;
+  --accent-soft: rgba(201,168,106,0.12);
+  --scrim: rgba(4,6,9,0.72);
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --line: #dde1e7; --fg: #12161c; --muted: #5b6573;
+    --accent: #8a6a2c; --accent-soft: rgba(138,106,44,0.10); --scrim: rgba(18,22,28,0.45); color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --line: #dde1e7; --fg: #12161c; --muted: #5b6573;
+  --accent: #8a6a2c; --accent-soft: rgba(138,106,44,0.10); --scrim: rgba(18,22,28,0.45); color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 16px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+.wrap {
+  max-width: 880px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Header */
+header.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
+.mark { font-family: var(--display); font-weight: 700; letter-spacing: 0.08em; font-size: 16px; }
+.mark span { color: var(--accent); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+nav a:hover { color: var(--fg); }
+nav a b { color: var(--accent); font-weight: 500; margin-right: 6px; }
+
+.label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.label.accent { color: var(--accent); }
+
+/* Hero */
+.hero { padding-block: 72px 48px; display: grid; gap: 22px; }
+.hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(40px, 8vw, 72px); line-height: 1.02; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.hero p.lede { font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); max-width: 72ch; margin: 0; text-wrap: pretty; }
+.hero p.lede strong { color: var(--fg); font-weight: 500; }
+.strip { list-style: none; margin: 6px 0 0; padding: 14px 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.strip li { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg); white-space: nowrap; }
+.strip li + li::before { content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin-right: 20px; vertical-align: middle; }
+@media (max-width: 640px) { .strip { justify-content: flex-start; } .strip li + li::before { margin-right: 10px; } }
+.meta { margin: 4px 0 0; display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 18px; max-width: 60ch; }
+.meta div { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; align-items: baseline; }
+.meta dt { margin: 0; }
+.meta dd { margin: 0; font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em; color: var(--fg); }
+.meta dd i { font-style: normal; color: var(--accent); padding: 0 4px; }
+@media (max-width: 480px) { .meta div { grid-template-columns: 1fr; gap: 2px; } }
+.ext { color: var(--accent); border-bottom: 1px solid var(--accent-soft); }
+.ext:hover { border-bottom-color: var(--accent); }
+.case-block a { color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+
+section { padding-block: 56px; border-top: 1px solid var(--line); scroll-margin-top: 64px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+.sec-head h2 { font-family: var(--display); font-weight: 600; font-size: clamp(26px, 4vw, 34px); letter-spacing: -0.01em; margin: 0; }
+
+/* Selected work cards */
+.selected { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.card {
+  text-align: left; font: inherit; color: inherit; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px;
+  display: grid; grid-template-rows: auto auto 1fr auto; gap: 8px; transition: border-color .15s ease, transform .15s ease;
+}
+.card:hover { border-color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { .card:hover { transform: translateY(-2px); } }
+.card .co { font-family: var(--display); font-weight: 600; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg); }
+.card .fig { font-family: var(--mono); font-size: 22px; font-weight: 500; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.card h3 { font-family: var(--display); font-weight: 600; font-size: 15px; line-height: 1.35; margin: 0; }
+.card .open { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-top: 6px; }
+
+/* Case study dialog */
+dialog.case {
+  width: min(680px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+  padding: 0; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--surface); color: var(--fg);
+}
+dialog.case::backdrop { background: var(--scrim); }
+.case-inner { padding: 28px clamp(20px, 4vw, 36px) 32px; display: grid; gap: 22px; overflow-y: auto; max-height: calc(100vh - 50px); }
+.case-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.case-head h3 { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 3.5vw, 28px); line-height: 1.2; margin: 6px 0 0; text-wrap: balance; }
+button.close {
+  flex: none; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 6px 10px; cursor: pointer;
+}
+button.close:hover { color: var(--fg); border-color: var(--accent); }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.metric { background: var(--surface-2); padding: 14px 16px; display: grid; gap: 4px; }
+.metric b { font-family: var(--mono); font-weight: 500; font-size: 20px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.metric span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+.case-block { display: grid; gap: 6px; }
+.case-block h4 { margin: 0; font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+.case-block p { margin: 0; max-width: 62ch; }
+.case-block ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.case-block li::marker { color: var(--accent); }
+.chip { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.04em; color: var(--fg); background: var(--accent-soft); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; }
+.case-block .tags { gap: 8px; }
+
+/* Timeline */
+.entry { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding-block: 28px; border-top: 1px dashed var(--line); }
+.timeline .entry:first-child, .edu .entry:first-child { border-top: 0; padding-top: 0; }
+.when { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+.when .loc { display: block; margin-top: 4px; font-size: 12px; }
+.what { min-width: 0; }
+.what h3 { font-family: var(--display); font-weight: 600; font-size: 21px; margin: 0 0 4px; letter-spacing: -0.005em; }
+.what .role { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+.what .role em { font-style: normal; color: var(--accent); }
+.what ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+.what li::marker { color: var(--accent); }
+.num { font-family: var(--mono); font-size: 0.92em; font-variant-numeric: tabular-nums; color: var(--fg); background: var(--accent-soft); padding: 1px 5px; border-radius: 3px; white-space: nowrap; }
+.sub { margin-top: 20px; display: grid; gap: 6px; }
+.sub h4 { margin: 0 0 2px; font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+.note { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+/* Next */
+.thesis { font-family: var(--display); font-weight: 600; font-size: clamp(20px, 3vw, 26px); line-height: 1.3; margin: 0 0 28px; max-width: 34ch; text-wrap: balance; }
+.thesis span { color: var(--accent); }
+.next { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.next .item { border-left: 2px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 6px; align-content: start; }
+.next .item h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 18px; }
+.next .item p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* Contact */
+.contact { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+.email { font-family: var(--mono); font-size: 16px; user-select: all; }
+button.copy {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 4px; padding: 7px 12px; cursor: pointer;
+}
+button.copy:hover { border-color: var(--accent); color: var(--accent); }
+footer { border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 24px 40px; }
+
+@media (max-width: 860px) { .selected { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .selected { grid-template-columns: 1fr; } }
+@media (max-width: 760px) {
+  .next { grid-template-columns: 1fr; }
+  .entry { grid-template-columns: 1fr; gap: 8px; }
+  .metrics { grid-template-columns: 1fr; }
+  .hero { padding-block: 48px 36px; }
+  nav ul { gap: 14px; }
+}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Vijetha Hegde, back to top">V<span>.</span>H</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work"><b>01</b>Work</a></li>
+        <li><a href="#academics"><b>02</b>Academics</a></li>
+        <li><a href="#next"><b>03</b>Next</a></li>
+        <li><a href="#contact"><b>04</b>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <h1>Vijetha Hegde</h1>
+      <p class="lede"><strong>Investor &amp; operator</strong> with experience across FinTech, digital assets and AI. ACCA-certified accountant. Launched a blockchain product at Goldman Sachs, invested in AI-native founders at Antler, and advised on FinTech M&amp;A at J.P. Morgan. <strong>Cornell MBA '27</strong>, Finance, AI &amp; Strategy.</p>
+      <ul class="strip" aria-label="Focus">
+        <li>NYC · BLR</li>
+        <li>FinTech</li>
+        <li>Digital assets</li>
+        <li>Institutional partnerships</li>
+        <li>Applied AI</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="sel-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="sel-h">Selected work</h2></div>
+      <div class="selected">
+        <button class="card" type="button" data-case="jpm">
+          <span class="co">J.P. Morgan</span>
+          <span class="fig">$9.0bn+</span>
+          <h3>LLM-built ARR model for a FinTech carve-out</h3>
+          <span class="open">Read ↗</span>
+        </button>
+        <button class="card" type="button" data-case="dap">
+          <span class="co">Goldman Sachs</span>
+          <span class="fig">$116.0mm</span>
+          <h3>Digital Assets Platform launch with partner banks</h3>
+          <span class="open">Read ↗</span>
+        </button>
+        <button class="card" type="button" data-case="centrl">
+          <span class="co">Goldman Sachs</span>
+          <span class="fig">95%</span>
+          <h3>Third-party due diligence, automated</h3>
+          <span class="open">Read ↗</span>
+        </button>
+        <button class="card" type="button" data-case="antler">
+          <span class="co">Antler</span>
+          <span class="fig">1,600+</span>
+          <h3>Unicorn founder thesis and sourcing</h3>
+          <span class="open">Read ↗</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="work-h">Work</h2><span class="label">2026 → 2022</span></div>
+      <div class="timeline">
+
+        <div class="entry">
+          <div class="when">Sep 2026 – now<span class="loc">New York</span></div>
+          <div class="what">
+            <h3>UnBound X</h3>
+            <p class="role">Part-time AI Product Strategist · early-stage AI investing platform</p>
+            <ul>
+              <li>Built a <span class="num">50+</span> lead partnership funnel; converted client meetings into <span class="num">3</span> pilots.</li>
+              <li>Mapped user activation across product channels; pitched <span class="num">3</span> roadmap priorities and the 2027 monetization model.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">Jun – Aug 2026<span class="loc">New York</span></div>
+          <div class="what">
+            <h3>J.P. Morgan</h3>
+            <p class="role">IB Summer Associate, Financial Institutions &amp; FinTech · <em>2026 MBA Award: $90k for potential, impact and contribution to the school; sole Cornell recipient</em></p>
+            <ul>
+              <li><span class="num">$9.0bn+</span> across two live sell-side M&amp;A processes, plus <span class="num">4</span> advisory deals in FinTech, AI infrastructure debt financing and alternative asset managers.</li>
+              <li>Turned several thousand data room pages into a module-level ARR build with LLMs; it became the basis of the synergy case for the board and valuation committee.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">Apr – Jul 2025<span class="loc">Bengaluru</span></div>
+          <div class="what">
+            <h3>Antler</h3>
+            <p class="role">Pre-MBA, AI, FinTech &amp; B2B SaaS investments · $1.0bn AUM, 1,500+ portfolio companies</p>
+            <ul>
+              <li><span class="num">$1.9mm</span> deployed into <span class="num">6</span> deals through a new AI-led investment playbook spanning FinTech, HealthTech and Consumer.</li>
+              <li><span class="num">1,600+</span> unicorns analyzed for founder and talent patterns with Antler's co-founder and CBO, Fridtjof Berge; outbound sourcing channels up <span class="num">12%</span>. Report published and <a class="ext" href="https://www.linkedin.com/feed/update/urn:li:activity:7414712915926159360/" target="_blank" rel="noopener">covered by Fortune ↗</a>.</li>
+              <li><span class="num">6</span> founders advised on GTM and fundraising; <span class="num">$0.7mm</span> allocated at term sheet.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">Jan 2022 – Apr 2025<span class="loc">Bengaluru</span></div>
+          <div class="what">
+            <h3>Goldman Sachs</h3>
+            <p class="role">Analyst → Associate (fast-track promotion within 11 months) · Bank Relationship Management &amp; Digital Assets</p>
+
+            <div class="sub">
+              <h4>Digital assets</h4>
+              <ul>
+                <li>Drove launch and adoption of GS DAP: <span class="num">3</span> new banking partners, <span class="num">$116.0mm</span> in tokenized securities transactions.</li>
+              </ul>
+            </div>
+            <div class="sub">
+              <h4>Automation &amp; regulation</h4>
+              <ul>
+                <li>Single point of contact for third-party risk due diligence on <span class="num">~140</span> banks and custodians, covering US (CFTC, SEC), EMEA (PRA, BaFin) and Singapore (MAS) requirements, including SOX and DORA; represented GS on an AIMA working group of <span class="num">40+</span> institutions.</li>
+                <li>Automated the review of 10-Ks, audit reports and policy documents across <span class="num">~500</span> control checks: <span class="num">95%</span> efficiency gain, <span class="num">30%</span> lower headcount, review cycle halved. Presented to a <span class="num">40</span>-bank industry forum.</li>
+              </ul>
+            </div>
+            <div class="sub">
+              <h4>New business &amp; bank partnerships</h4>
+              <ul>
+                <li>Grew repeat business across <span class="num">20</span> Tier-1 and Tier-2 bank relationships; renegotiated credit terms directly with regional heads of financial institutions, adding <span class="num">$9.5mm</span> in incremental interest inflows.</li>
+                <li>Opened partnerships with <span class="num">2</span> new regional banks, extending <span class="num">$345.0mm</span> in credit facilities and optimizing firm liquidity.</li>
+                <li>Launch lead for Indian partner banks on the ISO 20022 SWIFT migration and Marcus, Goldman's consumer payments app: owned bank-side onboarding, testing, cutover plans and day-0 go-live readiness.</li>
+              </ul>
+            </div>
+            <div class="sub">
+              <h4>AI &amp; leadership</h4>
+              <ul>
+                <li>Perplexity Business Fellow '25: brought frontier AI tools to Goldman Treasury's AI committee and presented enterprise adoption workstreams to the AI governance committee; beta-tested the Comet browser.</li>
+                <li>Promoted to Associate within 11 months, with stretch roles in Risk and Liquidity; nominated twice to the Goldman People Council.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="academics" aria-labelledby="acad-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="acad-h">Academics</h2></div>
+      <div class="edu">
+        <div class="entry">
+          <div class="when">MBA '27<span class="loc">Ithaca · NYC</span></div>
+          <div class="what">
+            <h3>Cornell SC Johnson College of Business</h3>
+            <p class="role">Finance &amp; Strategy core · Applied AI Practicum · Ezra Ventures · High Tech Club · Old Ezra Finance Club</p>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="when">ACCA<span class="loc">United Kingdom</span></div>
+          <div class="what">
+            <h3>Association of Chartered Certified Accountants (ACCA), UK</h3>
+            <p class="role">Chartered Certified Accountant · <em>Global rank 18</em> · Specialization in Audit &amp; Assurance, Financial Management and IFRS accounting</p>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="when">B.Com '21<span class="loc">Bengaluru</span></div>
+          <div class="what">
+            <h3>St Joseph's College of Commerce</h3>
+            <p class="role">Finance &amp; International Business · <em>Rank 1 of 300</em> (final semester) · Director, Entrepreneurship Cell</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="next" aria-labelledby="next-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="next-h">What's next</h2><span class="label accent">Operator · FinTech, SaaS &amp; AI</span></div>
+      <p class="thesis">Building companies from the operating seat: <span>strategy, go-to-market and capital</span>.</p>
+      <div class="next">
+        <div class="item">
+          <h3>Scaling UnBound X</h3>
+          <p>Converting pilots into paying partners and executing the 2027 product roadmap and monetization model.</p>
+        </div>
+        <div class="item">
+          <h3>Building in New York</h3>
+          <p>A Cornell Tech term focused on FinTech and AI infrastructure, working alongside the founders and investors shaping the city's fintech ecosystem.</p>
+        </div>
+        <div class="item">
+          <h3>Strategy, GTM &amp; Capital</h3>
+          <p>Setting where a company competes, how it sells and prices, and how it funds growth, from the operating model to the next raise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="contact-h">Contact</h2></div>
+      <div class="contact">
+        <span class="email" id="email">vh245@cornell.edu</span>
+        <button class="copy" id="copy-email" type="button">Copy email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="label">Vijetha Hegde · 2026</span>
+    <a class="label" href="#top">Top ↑</a>
+  </div>
+</footer>
+
+<dialog class="case" id="case" aria-labelledby="case-title">
+  <div class="case-inner">
+    <div class="case-head">
+      <div>
+        <span class="label accent" id="case-co"></span>
+        <h3 id="case-title"></h3>
+      </div>
+      <button class="close" id="case-close" type="button">Close</button>
+    </div>
+    <div class="metrics" id="case-metrics"></div>
+    <div id="case-body" style="display:grid;gap:18px"></div>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  var CASES = {
+    jpm: {
+      co: "J.P. Morgan · Summer 2026",
+      title: "LLM-built ARR model for a FinTech carve-out",
+      metrics: [["$9.0bn+", "live sell-side M&A"], ["1,000s", "data room pages processed"], ["Days → hours", "time to a usable revenue build"]],
+      blocks: [
+        ["Problem identified", "A FinTech carve-out being sold to strategic technology buyers had disclosure only at segment level. Without a granular revenue view, the team could not credibly value the asset or size buyer synergies."],
+        ["What was owned", ["Proposed a bottom-up build instead of a top-down estimate, and owned it end to end.", "Used LLMs to work through several thousand pages of product documentation, API references and contract schedules, mapping the business module by module.", "Tied each module to customer counts, pricing tiers and contract terms to build ARR from the unit level, with every figure traced to a source page.", "Caught a revenue split the model had inferred rather than extracted, and set a two-pass, cite-every-number rule for the rest of the build."]],
+        ["Outcome", "The module-level ARR build became the basis of the synergy case that informed board decisions and valuation committee opinions, and cut days of manual extraction to hours."],
+        ["Skills built", {tags: ["Bottom-up ARR modeling", "Synergy analysis", "LLM-assisted diligence", "Source verification", "Board-level materials"]}],
+        ["In hindsight", "The verification rule came after the first error. Building it in from the first extraction, and packaging the workflow as a template, would have saved rework and let the rest of the deal team reuse it."]
+      ]
+    },
+    dap: {
+      co: "Goldman Sachs · Digital Assets",
+      title: "Launching the Digital Assets Platform with partner banks",
+      metrics: [["$116.0mm", "tokenized securities transacted"], ["3", "new banking partners live"], ["Compressed", "contract execution timeline"]],
+      blocks: [
+        ["Problem identified", "Goldman's blockchain platform needed institutional participants to work. Partner banks were used to settling through local custodians and saw blockchain as crypto risk, so a strong product alone would not get them to transact."],
+        ["What was owned", ["Took ownership of partner bank onboarding, from first conversation to first live transaction.", "Mapped who decided at each bank and connected their legal, operations and markets teams across regions.", "Shifted the pitch from technology to the concerns that actually decided adoption: settlement risk, legal certainty and operational fit.", "Drove contract execution to close on a compressed timeline."]],
+        ["Outcome", "Three new banking partners onboarded and through their first transactions, totaling $116.0mm in tokenized securities on the platform."],
+        ["Skills built", {tags: ["New product GTM", "Institutional partnerships", "Stakeholder mapping", "Contract execution", "Tokenization"]}],
+        ["In hindsight", "Each bank was onboarded largely from scratch. Turning the first onboarding into a standard legal and operations checklist would have made the second and third banks faster and the process easier to scale."]
+      ]
+    },
+    centrl: {
+      co: "Goldman Sachs · Third-party risk",
+      title: "Automating third-party due diligence",
+      metrics: [["95%", "efficiency gain on control checks"], ["6 → 3", "months per review cycle"], ["30%", "lower headcount required"]],
+      blocks: [
+        ["Problem identified", "Annual diligence on ~140 banks and custodians ran on Excel: ~500 control checks, the same questions and documents (10-Ks, audit reports, policies) reviewed one institution at a time, with no comparison across banks or years. A five-person team needed six months per cycle. Nobody had asked for it to change."],
+        ["What was owned", ["Spotted the repetition, mapped the workflow and its bottlenecks with the review team, and built the business case.", "Framed it around risk (lower error rates, shorter windows for issues to go unnoticed) before cost, which won sponsorship and dedicated time.", "Brought in CENTRL and moved the process onto one platform: standard responses, cross-bank comparison, consistent risk scoring and one place for exceptions.", "Ran the internal rollout across legal, compliance and technology, plus leadership roadshows to get it adopted."]],
+        ["Outcome", "Review cycle halved, 95% efficiency gain on control checks and 30% lower headcount required, with the team's time moved to exceptions and judgment calls. Presented at an industry forum of 40 banks."],
+        ["Skills built", {tags: ["Process redesign", "Business case building", "Vendor management", "Change management", "Regulatory controls"]}],
+        ["In hindsight", "The first version of the case was built largely alone, and a senior stakeholder pushed back hard. Making him a reviewer from day one, and testing on live files earlier, would have shortened the path to approval."]
+      ]
+    },
+    antler: {
+      co: "Antler · Bengaluru, 2025",
+      title: "Unicorn founder thesis",
+      metrics: [["1,600+", "global unicorns analyzed"], ["12%", "more outbound sourcing channels"], ["Fortune", "coverage of the published report"]],
+      blocks: [
+        ["Problem identified", "Sourcing was relationship-led and narrow, and there was no data on which founder traits and talent clusters actually predicted outcomes. The study was self-initiated."],
+        ["What was owned", ["Designed the question and built a dataset of 1,600+ global unicorns from public sources.", "Tested founder traits and talent clusters against outcomes to find where the team was not looking.", "Worked with Antler's co-founder and CBO, Fridtjof Berge, and defended the method when partners challenged the sample."]],
+        ["Outcome", "Outbound deal sourcing channels expanded by 12%, and the findings fed the AI-led investment playbook that directed $1.9mm into six deals. The report was published and covered by Fortune magazine.", {href: "https://www.linkedin.com/feed/update/urn:li:activity:7414712915926159360/", text: "Read the coverage ↗"}],
+        ["Skills built", {tags: ["Market research", "Data analysis", "Founder evaluation", "Investment thesis", "Published research"]}],
+        ["In hindsight", "The study only covers companies that succeeded, so it carries survivorship bias. Building a comparison set from the same cohorts at the start would have made the findings stronger."]
+      ]
+    }
+  };
+
+  var dlg = document.getElementById('case');
+  var lastTrigger = null;
+
+  function el(tag, text) { var e = document.createElement(tag); if (text != null) e.textContent = text; return e; }
+
+  function openCase(key, trigger) {
+    var c = CASES[key]; if (!c) return;
+    lastTrigger = trigger;
+    document.getElementById('case-co').textContent = c.co;
+    document.getElementById('case-title').textContent = c.title;
+    var m = document.getElementById('case-metrics'); m.innerHTML = '';
+    c.metrics.forEach(function (x) {
+      var d = el('div'); d.className = 'metric';
+      d.appendChild(el('b', x[0])); d.appendChild(el('span', x[1])); m.appendChild(d);
+    });
+    var body = document.getElementById('case-body'); body.innerHTML = '';
+    c.blocks.forEach(function (b) {
+      var d = el('div'); d.className = 'case-block';
+      d.appendChild(el('h4', b[0]));
+      if (b[1] && b[1].tags) {
+        var t = el('div'); t.className = 'tags';
+        b[1].tags.forEach(function (x) { var sp = el('span', x); sp.className = 'chip'; t.appendChild(sp); });
+        d.appendChild(t);
+      } else if (Array.isArray(b[1])) {
+        var ul = el('ul'); b[1].forEach(function (li) { ul.appendChild(el('li', li)); }); d.appendChild(ul);
+      } else { d.appendChild(el('p', b[1])); }
+      if (b[2] && b[2].href) {
+        var a = el('a', b[2].text); a.href = b[2].href; a.target = '_blank'; a.rel = 'noopener'; a.className = 'ext'; a.style.justifySelf = 'start'; d.appendChild(a);
+      }
+      body.appendChild(d);
+    });
+    if (typeof dlg.showModal === 'function') { dlg.showModal(); } else { dlg.setAttribute('open', ''); }
+    document.getElementById('case-close').focus();
+  }
+  function closeCase() {
+    if (typeof dlg.close === 'function') { dlg.close(); } else { dlg.removeAttribute('open'); }
+  }
+  dlg.addEventListener('close', function () { if (lastTrigger) lastTrigger.focus(); });
+  document.getElementById('case-close').addEventListener('click', closeCase);
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) closeCase(); });
+  Array.prototype.forEach.call(document.querySelectorAll('.card[data-case]'), function (btn) {
+    btn.addEventListener('click', function () { openCase(btn.getAttribute('data-case'), btn); });
+  });
+
+  var copyBtn = document.getElementById('copy-email');
+  var email = document.getElementById('email');
+  copyBtn.addEventListener('click', function () {
+    var text = email.textContent.trim();
+    function selectText() {
+      var r = document.createRange(); r.selectNodeContents(email);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      copyBtn.textContent = 'Selected, press copy';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        copyBtn.textContent = 'Copied';
+        setTimeout(function () { copyBtn.textContent = 'Copy email'; }, 1800);
+      }).catch(selectText);
+    } else { selectText(); }
+  });
+})();
+</script>
+
+</body>
+</html>
