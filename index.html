@@ -3,311 +3,234 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta property="og:title" content="Vijetha Hegde">
-<meta property="og:description" content="Investor and operator across FinTech, digital assets and AI. Cornell MBA '27.">
 <title>Vijetha Hegde</title>
+<meta name="description" content="Vijetha Hegde: finance and strategy operator across FinTech, digital assets and AI. Cornell MBA '27.">
+<meta property="og:title" content="Vijetha Hegde">
+<meta property="og:description" content="Finance and strategy operator across FinTech, digital assets and AI. Cornell MBA '27.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijethahegde.com/">
+<meta property="og:image" content="https://vijethahegde.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Vijetha Hegde: investor and operator across FinTech, digital assets and AI. Cornell MBA '27.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191918'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EVH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
 <style>
-/* Layout: one calm white column; a single angled gradient band behind the hero; storybook scene beside chapter text; ledger-style timeline with a mono date gutter */
+/* Layout: a calm, document-like single column. Serif headings, Inter body, one quiet accent. */
 :root {
   --bg: #ffffff;
-  --bg-2: #f6f9fc;
+  --bg-2: #f7f7f5;
   --surface: #ffffff;
-  --line: #e3e8ee;
-  --fg: #0a2540;
-  --muted: #425466;
-  --soft: #6b7a8f;
-  --accent: #635bff;
-  --accent-ink: #4b44e0;
-  --accent-soft: rgba(99, 91, 255, 0.09);
-  --cyan: #0a9fbf;
-  --teal: #0f9a85;
-  --on-ink: #ffffff;
-  --shadow: 0 1px 2px rgba(10,37,64,.06), 0 8px 24px rgba(10,37,64,.07);
-  --shadow-lift: 0 2px 4px rgba(10,37,64,.07), 0 16px 40px rgba(10,37,64,.12);
-  --scrim: rgba(10, 37, 64, 0.38);
-  --band: linear-gradient(100deg, #a8a3ff 0%, #635bff 22%, #3ad0ef 52%, #7ae6d4 70%, #ffc6dd 100%);
-  --display: "Bricolage Grotesque", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --line: #e9e9e7;
+  --line-strong: #dcdcd8;
+  --fg: #191918;
+  --muted: #55534e;
+  --soft: #8a8883;
+  --accent: #2457c5;
+  --accent-soft: rgba(36, 87, 197, 0.08);
+  --shadow: 0 1px 2px rgba(15,15,15,.04);
+  --shadow-lift: 0 1px 2px rgba(15,15,15,.05), 0 10px 28px rgba(15,15,15,.08);
+  --scrim: rgba(15, 15, 15, 0.42);
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   color-scheme: light;
 }
 :root[data-theme="dark"] {
-  --bg: #0a1628; --bg-2: #0e1d33; --surface: #11223b; --line: #1f3352; --fg: #e8eef6; --muted: #a3b2c7; --soft: #8a99b0;
-  --accent: #8a84ff; --accent-ink: #a7a2ff; --accent-soft: rgba(138,132,255,.14); --cyan: #3fd0ef; --teal: #3ad3b6; --on-ink: #0a1628;
-  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28); --shadow-lift: 0 2px 4px rgba(0,0,0,.35), 0 16px 40px rgba(0,0,0,.4);
-  --scrim: rgba(2, 8, 18, 0.66);
-  --band: linear-gradient(100deg, #3b357f 0%, #4f48c9 25%, #1f8fae 55%, #1e7f73 75%, #7d4a66 100%);
+  --bg: #191919; --bg-2: #202020; --surface: #232323; --line: #2f2f2f; --line-strong: #3a3a3a;
+  --fg: #ebebea; --muted: #b1b0ab; --soft: #8a8984;
+  --accent: #7aa2ff; --accent-soft: rgba(122, 162, 255, 0.12);
+  --shadow: 0 1px 2px rgba(0,0,0,.3); --shadow-lift: 0 1px 2px rgba(0,0,0,.35), 0 12px 32px rgba(0,0,0,.4);
+  --scrim: rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; font-feature-settings: "cv11", "ss01"; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-.label { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--soft); }
-.label.accent { color: var(--accent-ink); }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.label { font-size: 13px; font-weight: 500; color: var(--soft); letter-spacing: 0; }
+.num-t { font-variant-numeric: tabular-nums; }
 
 /* Buttons */
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 500; font-size: 14.5px; transition: border-color .15s, background .15s; }
-.btn:hover { border-color: var(--accent); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.btn.primary:hover { background: var(--accent-ink); }
-.btn.icon { width: 44px; padding: 0; flex: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--line-strong); background: var(--surface); cursor: pointer; font-weight: 500; font-size: 15px; transition: border-color .15s, background .15s; }
+.btn:hover { background: var(--bg-2); }
+.btn.primary { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.btn.primary:hover { opacity: .88; background: var(--fg); }
+.btn.icon { width: 42px; padding: 0; flex: none; }
 .btn svg { width: 18px; height: 18px; }
 
 /* Header */
-header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-header.top .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-block: 10px; }
-.right { display: flex; align-items: center; justify-content: flex-end; gap: 20px; min-width: 0; }
-.home { font-size: 14px; font-weight: 500; color: var(--muted); }
-.home:hover { color: var(--fg); }
-.brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.mark { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: var(--fg); color: var(--bg); font-family: var(--display); font-weight: 800; font-size: 15px; line-height: 1; letter-spacing: -0.01em; flex: none; }
-.mark span { color: var(--accent); margin: 0 1px; }
-:root[data-theme="dark"] .mark span { color: var(--accent-ink); }
-.brand-name { font-family: var(--display); font-weight: 800; font-size: clamp(17px, 2.2vw, 20px); letter-spacing: -0.02em; white-space: nowrap; text-align: center; }
-.brand-name b { font-family: var(--display); font-weight: 600; font-size: 15px; }
-.brand-name small { font-size: 12.5px; color: var(--muted); }
-nav.sections { }
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; min-width: 0; font-weight: 600; font-size: 15.5px; white-space: nowrap; }
+.mark { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 7px; background: var(--fg); color: var(--bg); font-family: var(--serif); font-weight: 600; font-size: 13px; letter-spacing: .02em; flex: none; }
+.right { display: flex; align-items: center; gap: 22px; }
 nav.sections ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; }
-nav.sections a { font-size: 14px; color: var(--muted); }
+nav.sections a { font-size: 14.5px; color: var(--muted); }
 nav.sections a:hover { color: var(--fg); }
-.head-actions { display: flex; gap: 8px; align-items: center; }
-@media (max-width: 880px) { nav.sections { display: none; } }
-@media (max-width: 420px) { .home { display: none; } }
+@media (max-width: 760px) { nav.sections { display: none; } }
 
 /* Hero */
-.hero { position: relative; overflow: hidden; }
-.band { position: absolute; left: -10%; right: -10%; top: -130px; height: 300px; background: var(--band); transform: skewY(-6deg); transform-origin: top left; opacity: .22; pointer-events: none; }
-:root[data-theme="dark"] .band { opacity: .45; }
-.hero .wrap { position: relative; padding-block: 36px 16px; display: grid; gap: 16px; }
-.hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 7.6vw, 80px); line-height: .98; letter-spacing: -0.04em; margin: 0; }
-.lede { font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5; color: var(--muted); max-width: none; margin: 0; text-wrap: wrap; }
-.lede strong { color: var(--fg); font-weight: 600; }
-.strip { margin: 8px 0 0; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-.strip-track { display: flex; width: max-content; animation: marquee 56s linear infinite; }
-.strip:hover .strip-track { animation-play-state: paused; }
-.strip ul { list-style: none; margin: 0; padding: 0; display: flex; }
-.strip li { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; display: inline-flex; align-items: center; }
-.strip li::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin: 0 28px; }
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.hero .wrap { padding-block: 52px 28px; }
+.hero-text { display: grid; gap: 14px; }
+.hero h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(36px, 5vw, 48px); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+.intro { font-size: clamp(16.5px, 1.8vw, 18px); line-height: 1.6; color: var(--muted); margin: 0; text-wrap: pretty; }
 
-/* Journey */
-.story { padding-block: 12px 56px; }
-.journey { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
-.j-tabs { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); background: var(--bg-2); }
-.j-tablist { display: flex; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
-.j-tablist::-webkit-scrollbar { display: none; }
-.j-tab { flex: 1 0 auto; min-height: 50px; padding: 0 18px; border: 0; border-bottom: 2px solid transparent; background: none; cursor: pointer; font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: -0.01em; color: var(--muted); display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; transition: color .15s, background .15s, border-color .15s; }
-.j-tab svg { width: 16px; height: 16px; }
-.j-tab:hover { color: var(--fg); }
-.j-tab { position: relative; }
-.j-tab[aria-selected="true"] { color: var(--fg); background: var(--surface); border-bottom-color: color-mix(in srgb, var(--accent) 22%, transparent); }
-.j-prog { position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--accent); }
-.j-tab[aria-selected="true"] .j-prog { width: 100%; }
-.j-tab[aria-selected="true"] .j-prog.run { width: 0; animation: jprog 8s linear forwards; }
-.journey:hover .j-prog.run, .journey:has(:focus-visible) .j-prog.run { animation-play-state: paused; }
-@keyframes jprog { to { width: 100%; } }
-.j-arrows { display: flex; flex: none; border-left: 1px solid var(--line); }
-.j-arrow { width: 48px; border: 0; background: none; cursor: pointer; color: var(--muted); display: grid; place-items: center; }
-.j-arrow:hover { color: var(--accent-ink); }
-.j-arrow svg { width: 18px; height: 18px; }
-.j-body { padding: 20px 22px 22px; display: grid; gap: 16px; }
-.j-line { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(19px, 2.6vw, 24px); letter-spacing: -0.02em; line-height: 1.25; }
-.j-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-.j-stat { background: var(--bg-2); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
-.j-stat b { font-family: var(--mono); font-weight: 500; font-size: clamp(18px, 2.2vw, 22px); color: var(--accent-ink); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.j-group { gap: 10px; }
-.j-item { display: grid; gap: 2px; }
-.j-item + .j-item { padding-top: 10px; border-top: 1px solid var(--line); }
-.j-item b { font-family: var(--mono); font-weight: 500; font-size: clamp(17px, 2vw, 20px); color: var(--accent-ink); letter-spacing: -0.02em; }
-.j-item span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
-.j-stat small { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--soft); }
-.j-link { color: inherit; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
-.j-link:hover { border-bottom-color: var(--accent); }
-.j-stat span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
-.fade-swap { transition: opacity .4s cubic-bezier(.4,0,.2,1), transform .4s cubic-bezier(.4,0,.2,1); }
-.fade-swap.out { opacity: 0; transform: translateY(4px); }
-@media (max-width: 620px) {
-  .j-stats { grid-template-columns: 1fr; }
-  .j-tab { flex: none; padding: 0 14px; font-size: 14px; }
-}
+/* At a glance */
+.glance { padding-block: 0 36px; }
+.glance-lead { margin: 0 0 10px; font-size: 14.5px; font-weight: 500; color: var(--fg); }
+.glance-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.g-item { padding: 14px 18px 14px 0; display: flex; gap: 10px; align-items: baseline; }
+.g-item + .g-item { border-left: 1px solid var(--line); padding-left: 18px; }
+.g-item b { font-family: var(--serif); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; line-height: 1.2; font-variant-numeric: tabular-nums; flex: none; }
+.g-item span { font-size: 14px; color: var(--muted); line-height: 1.45; }
+.g-link { border-bottom: 1px solid var(--line-strong); }
+.g-link:hover { border-bottom-color: var(--accent); color: var(--accent); }
+@media (max-width: 720px) { .glance-grid { grid-template-columns: 1fr; } .g-item, .g-item + .g-item { padding: 10px 0; } .g-item + .g-item { border-left: 0; border-top: 1px solid var(--line); } }
 
 /* Sections */
-section.block { padding-block: 64px; border-top: 1px solid var(--line); scroll-margin-top: 72px; }
+section.block { padding-block: 44px; border-top: 1px solid var(--line); scroll-margin-top: 64px; }
 section.block.tint { background: var(--bg-2); }
-.sec-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
-.sec-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 4.4vw, 44px); letter-spacing: -0.035em; line-height: 1.05; margin: 0; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.sec-head h2 { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 3vw, 30px); letter-spacing: -0.015em; line-height: 1.15; margin: 0; }
 
 /* Selected work */
 .selected { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
-.card { text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; grid-template-rows: auto auto 1fr auto; gap: 10px; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; min-height: 196px; }
-.card.lit { border-color: var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--surface) 70%); box-shadow: 0 0 0 1px var(--accent), var(--shadow-lift); }
-.card { transition: transform .25s ease, box-shadow 1.2s cubic-bezier(.4,0,.2,1), border-color 1.2s cubic-bezier(.4,0,.2,1), background 1.2s cubic-bezier(.4,0,.2,1); }
-.card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); box-shadow: var(--shadow-lift); }
-.card .co { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-.card .fig { font-family: var(--mono); font-weight: 500; font-size: 24px; color: var(--accent-ink); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-.card h3 { font-family: var(--display); font-weight: 600; font-size: 15.5px; line-height: 1.35; margin: 0; letter-spacing: -0.01em; }
-.card .open { font-size: 13.5px; font-weight: 600; color: var(--accent-ink); display: inline-flex; gap: 6px; align-items: center; }
+.card { text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; grid-template-rows: auto auto 1fr auto; gap: 6px; box-shadow: var(--shadow); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; min-height: 0; }
+.card:hover { border-color: var(--line-strong); box-shadow: var(--shadow-lift); }
+.card .co { font-size: 13px; font-weight: 500; color: var(--soft); }
+.card .fig { font-family: var(--serif); font-weight: 600; font-size: 24px; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.card h3 { font-weight: 600; font-size: 15.5px; line-height: 1.4; margin: 0; }
+.card .open { font-size: 14px; font-weight: 500; color: var(--accent); display: inline-flex; gap: 6px; align-items: center; }
 .card .open i { font-style: normal; transition: transform .2s; }
-.card:hover .open i { transform: translate(2px, -2px); }
+.card:hover .open i { transform: translateX(3px); }
 @media (max-width: 900px) { .selected { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .selected { grid-template-columns: 1fr; } .card { min-height: 0; } }
 
+/* Looking for */
+.thesis { font-family: var(--serif); font-weight: 500; font-size: clamp(18px, 2.2vw, 21px); line-height: 1.4; margin: 0 0 18px; max-width: 34ch; }
+.thesis span { color: var(--accent); }
+.next { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.next .item { border-top: 2px solid var(--fg); padding-top: 10px; display: grid; gap: 4px; align-content: start; }
+.next h3 { margin: 0; font-weight: 600; font-size: 16.5px; }
+.next p { margin: 0; color: var(--muted); font-size: 14.5px; }
+@media (max-width: 760px) { .next { grid-template-columns: 1fr; gap: 22px; } }
+
 /* Timeline */
-.entry { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; padding-block: 28px; border-top: 1px solid var(--line); }
+.entry { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding-block: 20px; border-top: 1px solid var(--line); }
 .list .entry:first-child { border-top: 0; padding-top: 0; }
-.when { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
-.badge { display: inline-grid; place-items: center; min-width: 44px; height: 40px; padding: 0 10px; margin-top: 12px; border-radius: 10px; background: var(--fg); color: var(--bg); font-family: var(--display); font-weight: 800; font-size: 13px; letter-spacing: -0.01em; }
-.badge.alt { background: var(--accent-soft); color: var(--accent-ink); }
-@media (max-width: 720px) { .badge { height: 32px; font-size: 12px; margin-top: 8px; } }
-.when .loc { display: block; margin-top: 4px; font-size: 12px; color: var(--soft); }
-.what { min-width: 0; max-width: 72ch; }
-.what h3 { font-family: var(--display); font-weight: 700; font-size: 21px; letter-spacing: -0.02em; margin: 0 0 4px; }
-.role { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
-.role em { font-style: normal; color: var(--accent-ink); font-weight: 500; }
-.what ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
-.what li::marker { color: var(--accent); }
-.num { font-family: var(--mono); font-size: .9em; font-variant-numeric: tabular-nums; color: var(--accent-ink); background: var(--accent-soft); padding: 1px 6px; border-radius: 5px; white-space: nowrap; font-weight: 500; }
-.sub { margin-top: 10px; display: block; line-height: 1.6; }
-.sub ul { display: inline; margin: 0; padding: 0; list-style: none; }
-.sub li { display: inline; }
-.sub li + li::before { content: " "; }
+.when { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 3px; }
+.when .loc { display: block; margin-top: 2px; font-size: 13.5px; color: var(--soft); }
+.what { min-width: 0; max-width: 70ch; }
+.what h3 { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: -0.01em; margin: 0 0 4px; }
+.role { margin: 0 0 8px; color: var(--muted); font-size: 14.5px; }
+.what ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 15px; }
+.what li::marker { color: var(--soft); }
+.num { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sub { margin-top: 8px; }
 .role + .sub { margin-top: 0; }
-.sub h4 { display: inline; margin: 0 8px 0 0; font-family: var(--mono); font-weight: 600; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--fg); }
-.ext { color: var(--accent-ink); font-weight: 500; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+.sub h4 { margin: 0 0 2px; font-size: 13px; font-weight: 600; color: var(--soft); }
+.ext { color: var(--accent); font-weight: 500; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
 .ext:hover { border-bottom-color: var(--accent); }
-@media (max-width: 720px) { .entry { grid-template-columns: 1fr; gap: 8px; } }
+@media (max-width: 720px) { .entry { grid-template-columns: 1fr; gap: 6px; } }
 
 /* Academics */
-section.block.compact { padding-block: 44px; }
-.edu-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-.edu-item { background: var(--surface); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
-.edu-item b { font-family: var(--display); font-weight: 700; font-size: 15px; line-height: 1.25; letter-spacing: -0.01em; }
-.edu-item > span:last-child { font-size: 13px; color: var(--muted); line-height: 1.45; }
-@media (max-width: 900px) { .edu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .edu-grid { grid-template-columns: 1fr; } }
-
-/* Next */
-.thesis { font-family: var(--display); font-weight: 800; font-size: clamp(21px, 3vw, 28px); line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 28px; max-width: 32ch; text-wrap: balance; }
-.thesis span { color: var(--accent-ink); }
-.next { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.next .item { border-left: 2px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 6px; align-content: start; }
-.next .item:nth-child(2) { border-color: var(--cyan); }
-.next .item:nth-child(3) { border-color: var(--teal); }
-.next h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
-.next p { margin: 0; color: var(--muted); font-size: 15px; }
-@media (max-width: 760px) { .next { grid-template-columns: 1fr; } }
+section.block.compact { padding-block: 36px; }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; grid-template-rows: repeat(2, auto); grid-auto-flow: column; }
+.edu li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.edu li div { display: grid; gap: 1px; min-width: 0; }
+.edu li b { font-weight: 600; }
+.edu li span { color: var(--muted); font-size: 13.5px; line-height: 1.45; }
+.edu li em { font-style: normal; color: var(--soft); font-size: 13.5px; white-space: nowrap; font-variant-numeric: tabular-nums; flex: none; }
+@media (max-width: 760px) { .edu { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; } }
 
 /* Contact */
-.contact-line { margin-top: 0; font-family: var(--display); font-weight: 800; font-size: clamp(30px, 5vw, 48px); line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 20px; }
-.contact { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; }
-.email { font-family: var(--mono); font-size: 16px; user-select: all; padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); overflow-wrap: anywhere; }
+.contact-line { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 3.2vw, 32px); line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 16px; }
+.contact { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.email { font-size: 15.5px; user-select: all; padding: 9px 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
 footer { border-top: 1px solid var(--line); }
-footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 22px 36px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 18px 28px; }
+footer a:hover { color: var(--fg); }
 
 /* Dialogs */
-dialog { padding: 0; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); color: var(--fg); width: min(720px, calc(100vw - 24px)); max-height: calc(100vh - 32px); box-shadow: var(--shadow-lift); }
+dialog { padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--fg); width: min(720px, calc(100vw - 24px)); max-height: calc(100vh - 32px); box-shadow: var(--shadow-lift); }
 dialog::backdrop { background: var(--scrim); }
-.dlg-inner { padding: 26px clamp(18px, 4vw, 36px) 32px; display: grid; gap: 22px; overflow-y: auto; max-height: calc(100vh - 34px); }
+.dlg-inner { padding: 28px clamp(18px, 4vw, 36px) 32px; display: grid; gap: 22px; overflow-y: auto; max-height: calc(100vh - 34px); }
 .dlg-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-.dlg-head h3 { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 3.4vw, 28px); letter-spacing: -0.025em; line-height: 1.18; margin: 6px 0 0; text-wrap: balance; }
-.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.dlg-head h3 { font-family: var(--serif); font-weight: 600; font-size: clamp(23px, 3.2vw, 28px); letter-spacing: -0.015em; line-height: 1.2; margin: 4px 0 0; text-wrap: balance; }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .metric { background: var(--bg-2); padding: 14px 16px; display: grid; gap: 4px; }
-.metric b { font-family: var(--mono); font-weight: 500; font-size: 20px; color: var(--accent-ink); font-variant-numeric: tabular-nums; }
-.metric span { font-size: 13px; color: var(--muted); line-height: 1.4; }
-.case-body { display: grid; gap: 18px; }
+.metric + .metric { border-left: 1px solid var(--line); }
+.metric b { font-family: var(--serif); font-weight: 600; font-size: 22px; font-variant-numeric: tabular-nums; }
+.metric span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
+.case-body { display: grid; gap: 20px; }
 .case-block { display: grid; gap: 6px; }
-.case-block h4 { margin: 0; font-family: var(--mono); font-weight: 500; font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+.case-block h4 { margin: 0; font-size: 13px; font-weight: 600; color: var(--soft); }
 .case-block p { margin: 0; max-width: 64ch; }
 .case-block ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
-.case-block li::marker { color: var(--accent); }
+.case-block li::marker { color: var(--soft); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip { font-family: var(--mono); font-size: 11.5px; letter-spacing: .03em; color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px; padding: 5px 11px; }
-@media (max-width: 620px) { .metrics { grid-template-columns: 1fr; } }
+.chip { font-size: 13px; color: var(--muted); background: var(--bg-2); border: 1px solid var(--line); border-radius: 6px; padding: 3px 10px; }
+@media (max-width: 620px) { .metrics { grid-template-columns: 1fr; } .metric + .metric { border-left: 0; border-top: 1px solid var(--line); } }
 
 /* Motion */
 @media (prefers-reduced-motion: no-preference) {
-  dialog[open] { animation: pop .22s cubic-bezier(.2,.8,.2,1); }
-  .js .hero-anim .stagger { opacity: 0; transform: translateY(10px); }
-  .js .hero-anim.revealed .stagger { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
-  .js .hero-anim.revealed .stagger:nth-child(2) { transition-delay: .08s; }
-  .js .hero-anim.revealed .stagger:nth-child(3) { transition-delay: .16s; }
-  @media (hover: hover) { .card:hover { transform: translateY(-3px); } }
+  dialog[open] { animation: pop .2s cubic-bezier(.2,.8,.2,1); }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .js .hero-text > * { opacity: 0; transform: translateY(6px); }
+  .js .hero-text.revealed > * { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+  .js .hero-text.revealed > *:nth-child(2) { transition-delay: .06s; }
+  .js .hero-text.revealed > *:nth-child(3) { transition-delay: .12s; }
+  .js .hero-text.revealed > *:nth-child(4) { transition-delay: .18s; }
+  .js .hero-text.revealed > *:nth-child(5) { transition-delay: .24s; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .strip-track { animation: none; width: auto; }
-  .strip-track ul[aria-hidden] { display: none; }
-  .strip-track ul { flex-wrap: wrap; row-gap: 8px; }
-  .j-prog.run { animation: none; width: 100%; }
-  html { scroll-behavior: auto; }
-  .flip-inner, .fade-swap { transition: none; }
-}
-
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 
-
 <header class="top">
   <div class="wrap">
-    <div class="brand">
-      <a class="mark" href="#top" aria-label="Back to top">V<span>.</span>H</a>
-      <a class="home" href="#top">Home</a>
-    </div>
-    <a class="brand-name" href="#top">Vijetha Hegde</a>
+    <a class="brand" href="#top" aria-label="Vijetha Hegde, back to top"><span class="mark" aria-hidden="true">VH</span>Vijetha Hegde</a>
     <div class="right">
-    <nav class="sections" aria-label="Sections">
-      <ul>
-        <li><a href="#top">Intro</a></li>
-        <li><a href="#select-work">Select work</a></li>
-        <li><a href="#work">Professional</a></li>
-        <li><a href="#academics">Academics</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    
-    </nav>
-    <div class="head-actions">
+      <nav class="sections" aria-label="Sections">
+        <ul>
+          <li><a href="#select-work">Work</a></li>
+          <li><a href="#work">Experience</a></li>
+          <li><a href="#academics">Education</a></li>
+          <li><a href="#next">What's next</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <button class="btn icon" id="theme" type="button" aria-label="Switch to dark theme">
         <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
       </button>
-    </div>
     </div>
   </div>
 </header>
 
 <main id="top">
-  <div class="hero">
-    <div class="band" aria-hidden="true"></div>
-    <div class="wrap hero-anim" id="hero">
-      <p class="lede stagger"><strong>Investor &amp; operator</strong> with experience across FinTech, digital assets and AI. ACCA-certified accountant. Managed institutional partnerships at Goldman Sachs, invested in AI-native founders at Antler, and advised on FinTech M&amp;A at J.P. Morgan. Cornell MBA '27, Finance, AI &amp; Strategy.</p>
-      <div class="strip stagger" role="group" aria-label="Focus"><div class="strip-track"><ul><li>NYC · BLR</li><li>FinTech</li><li>Digital assets</li><li>Institutional partnerships</li><li>Applied AI</li></ul><ul aria-hidden="true"><li>NYC · BLR</li><li>FinTech</li><li>Digital assets</li><li>Institutional partnerships</li><li>Applied AI</li></ul></div></div>
-    </div>
-  </div>
-
-  <section class="story" aria-label="Journey">
+  <section class="hero" aria-labelledby="hero-h">
     <div class="wrap">
-      <div class="journey" id="story">
-        <div class="j-tabs">
-          <div class="j-tablist" id="j-tabs" role="tablist" aria-label="Journey"></div>
-          <div class="j-arrows">
-            <button class="j-arrow" id="prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-            <button class="j-arrow" id="next-ch" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          </div>
-        </div>
-        <div class="j-body fade-swap" id="j-body" role="tabpanel">
-          <p class="j-line" id="j-line"></p>
-          <div class="j-stats" id="j-stats"></div>
-        </div>
+      <div class="hero-text" id="hero">
+        <h1 id="hero-h">Hi, I'm Vijetha.</h1>
+        <p class="intro">I'm a finance and strategy operator across FinTech, digital assets and AI, and a Cornell MBA candidate (Class of 2027). I've worked across Bengaluru and New York, with clients in the US, Europe and Singapore.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glance" aria-label="At a glance">
+    <div class="wrap">
+      <p class="glance-lead">Partnered with financial institutions at Goldman Sachs · Invested in AI-native founders at Antler · Advised on FinTech M&amp;A at J.P. Morgan</p>
+      <div class="glance-grid">
+        <div class="g-item"><b>$470M+</b><span>transactions executed at Goldman Sachs; 140+ clients</span></div>
+        <div class="g-item"><b>1,600+</b><span>unicorns analyzed at Antler; <a class="g-link" href="https://drive.google.com/file/d/1fjydTEuceercUgFAryERxJDfjTfsidTd/view" target="_blank" rel="noopener">thesis ↗</a> covered by Fortune</span></div>
+        <div class="g-item"><b>$9.0B+</b><span>M&amp;A executed at J.P. Morgan; 100+ FinTechs reviewed</span></div>
       </div>
     </div>
   </section>
@@ -316,56 +239,35 @@ dialog::backdrop { background: var(--scrim); }
     <div class="wrap">
       <div class="sec-head"><h2 id="sel-h">Select work</h2></div>
       <div class="selected">
-        <button class="card" type="button" data-case="jpm" aria-haspopup="dialog">
-          <span class="co">J.P. Morgan</span>
-          <span class="fig">$9.0bn+</span>
-          <h3>LLM-built ARR model for a FinTech carve-out</h3>
-          <span class="open">Read <i>↗</i></span>
-        </button>
-        <button class="card" type="button" data-case="antler" aria-haspopup="dialog">
-          <span class="co">Antler</span>
-          <span class="fig">1,600+</span>
-          <h3>Unicorn founder thesis and sourcing</h3>
-          <span class="open">Read <i>↗</i></span>
-        </button>
         <button class="card" type="button" data-case="dap" aria-haspopup="dialog">
           <span class="co">Goldman Sachs</span>
-          <span class="fig">$116.0mm</span>
+          <span class="fig">$116M</span>
           <h3>Digital Assets Platform launch with partner banks</h3>
-          <span class="open">Read <i>↗</i></span>
+          <span class="open">Read <i>→</i></span>
         </button>
         <button class="card" type="button" data-case="centrl" aria-haspopup="dialog">
           <span class="co">Goldman Sachs</span>
           <span class="fig">95%</span>
           <h3>Third-party due diligence, automated</h3>
-          <span class="open">Read <i>↗</i></span>
+          <span class="open">Read <i>→</i></span>
+        </button>
+        <button class="card" type="button" data-case="antler" aria-haspopup="dialog">
+          <span class="co">Antler</span>
+          <span class="fig">+12%</span>
+          <h3>New founder scouting channels from unicorn data</h3>
+          <span class="open">Read <i>→</i></span>
+        </button>
+        <button class="card" type="button" data-case="jpm" aria-haspopup="dialog">
+          <span class="co">J.P. Morgan</span>
+          <span class="fig">$9.0B+</span>
+          <h3>LLM-built ARR model for a FinTech carve-out</h3>
+          <span class="open">Read <i>→</i></span>
         </button>
       </div>
     </div>
   </section>
 
-  <section class="block" id="next" aria-labelledby="next-h">
-    <div class="wrap">
-      <div class="sec-head"><h2 id="next-h">What's next</h2><span class="label accent">Operator · FinTech, SaaS &amp; AI</span></div>
-      <p class="thesis">Building companies from the operating seat: <span>strategy, go-to-market and capital</span>.</p>
-      <div class="next">
-        <div class="item">
-          <h3>Scaling UnBound X</h3>
-          <p>Converting pilots into paying partners and executing the 2027 product roadmap and monetization model.</p>
-        </div>
-        <div class="item">
-          <h3>Building in New York</h3>
-          <p>A Cornell Tech term focused on FinTech and AI infrastructure, working alongside the founders and investors shaping the city's start-up and AI ecosystem.</p>
-        </div>
-        <div class="item">
-          <h3>Strategy, GTM &amp; Capital</h3>
-          <p>Setting where a company competes, how it sells and prices, and how it funds growth, from the operating model to the next raise.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block tint" id="work" aria-labelledby="work-h">
+  <section class="block" id="work" aria-labelledby="work-h">
     <div class="wrap">
       <div class="sec-head"><h2 id="work-h">Professional experience</h2></div>
       <div class="list">
@@ -386,10 +288,10 @@ dialog::backdrop { background: var(--scrim); }
           <div class="when">Jun – Aug 2026<span class="loc">New York</span></div>
           <div class="what">
             <h3>J.P. Morgan</h3>
-            <p class="role">IB Summer Associate, Financial Institutions &amp; FinTech · 2026 MBA Award: $90k for potential, impact and contribution to the school; sole Cornell recipient</p>
+            <p class="role">IB Summer Associate, Financial Institutions &amp; FinTech · 2026 MBA Award ($90k; sole Cornell recipient)</p>
             <ul>
-              <li><span class="num">$9.0bn+</span> across two live sell-side M&amp;A processes, plus 4 advisory deals in FinTech, AI infrastructure debt financing and alternative asset managers.</li>
-              <li>Turned several thousand data room pages into a module-level ARR build with LLMs; it became the basis of the synergy case for the board and valuation committee.</li>
+              <li><span class="num">$9.0B+</span> across two live sell-side M&amp;A processes, plus 4 advisory deals in FinTech, AI infrastructure and alternative asset managers.</li>
+              <li>Turned several thousand data room pages into a module-level ARR build with LLMs; it became the basis of the board's synergy case.</li>
             </ul>
           </div>
         </div>
@@ -398,11 +300,11 @@ dialog::backdrop { background: var(--scrim); }
           <div class="when">Apr – Jul 2025<span class="loc">Bengaluru</span></div>
           <div class="what">
             <h3>Antler</h3>
-            <p class="role">Pre-MBA, AI, FinTech &amp; B2B SaaS investments · $1.0bn AUM, 1,500+ portfolio companies</p>
+            <p class="role">Pre-MBA, AI, FinTech &amp; B2B SaaS investments · $1.0B AUM</p>
             <ul>
-              <li><span class="num">$1.9mm</span> deployed into 6 deals through a new AI-led investment playbook spanning FinTech, HealthTech and Consumer.</li>
-              <li><span class="num">1,600+</span> unicorns analyzed for founder and talent patterns with Antler's co-founder and CBO, Fridtjof Berge; outbound sourcing channels up 12%. Report published and <a class="ext" href="https://www.linkedin.com/feed/update/urn:li:activity:7414712915926159360/" target="_blank" rel="noopener">covered by Fortune ↗</a>.</li>
-              <li>6 founders advised on GTM and fundraising; $0.7mm allocated at term sheet.</li>
+              <li><span class="num">$1.9M</span> deployed into 6 deals through a new AI-led investment playbook.</li>
+              <li><span class="num">1,600+</span> unicorns analyzed with co-founder and CBO Fridtjof Berge; outbound sourcing up 12%.</li>
+              <li>Advised 6 founders on GTM and fundraising; 3 reached term sheet, with $0.7M allocated.</li>
             </ul>
           </div>
         </div>
@@ -411,24 +313,24 @@ dialog::backdrop { background: var(--scrim); }
           <div class="when">Jan 2022 – Apr 2025<span class="loc">Bengaluru</span></div>
           <div class="what">
             <h3>Goldman Sachs</h3>
-            <p class="role">Analyst → Senior Analyst (fast-track promotion within 10 months) → Associate · Bank Relationship Management &amp; Digital Assets</p>
+            <p class="role">Analyst → Senior Analyst (promoted in 10 months) → Associate · Bank Relationship Management &amp; Digital Assets</p>
             <div class="sub">
               <h4>Digital assets &amp; payments</h4>
               <ul>
-                <li>Drove launch of GS DAP: 3 new banking partners, <span class="num">$116.0mm</span> in tokenized securities; launch lead for Indian partner banks on the ISO 20022 SWIFT migration and Marcus.</li>
+                <li>Launched Goldman's Digital Assets Platform with 3 new banking partners: <span class="num">$116M</span> in tokenized securities. Launch lead for Indian partner banks on ISO 20022 and Marcus.</li>
               </ul>
             </div>
             <div class="sub">
               <h4>Automation &amp; regulation</h4>
               <ul>
-                <li>Point of contact for third-party risk diligence on ~140 banks and custodians across US, EMEA and Singapore regulation, including SOX and DORA; GS representative on a 40+ institution AIMA working group.</li>
-                <li>Automated ~500 control checks: <span class="num">95%</span> efficiency gain, 30% lower headcount, review cycle halved; presented to a 40-bank industry forum.</li>
+                <li>Ran third-party risk diligence on ~140 banks and custodians (US, EMEA, Singapore); GS representative on a 40+ institution AIMA working group.</li>
+                <li>Automated ~500 control checks: <span class="num">95%</span> efficiency gain, 30% less manual staffing, review cycle halved; presented to a 40-bank industry forum.</li>
               </ul>
             </div>
             <div class="sub">
               <h4>New business &amp; bank partnerships</h4>
               <ul>
-                <li>Grew 20 Tier-1 and Tier-2 bank relationships, adding $9.5mm in interest inflows; opened 2 new regional banks, extending <span class="num">$345.0mm</span> in credit facilities.</li>
+                <li>Managed 8 bank relationships, adding $9.5M in interest; brought on 2 regional banks, extending <span class="num">$345M</span> in credit facilities.</li>
               </ul>
             </div>
           </div>
@@ -438,14 +340,35 @@ dialog::backdrop { background: var(--scrim); }
     </div>
   </section>
 
-  <section class="block compact" id="academics" aria-labelledby="acad-h">
+  <section class="block tint compact" id="academics" aria-labelledby="acad-h">
     <div class="wrap">
-      <div class="sec-head"><h2 id="acad-h">Academics &amp; certifications</h2></div>
-      <div class="edu-grid">
-        <div class="edu-item"><span class="label">MBA '27 · Ithaca · NYC</span><b>Cornell SC Johnson College of Business</b><span>Merit scholar · Applied AI Practicum · Finance &amp; Tech club lead</span></div>
-        <div class="edu-item"><span class="label">ACCA · United Kingdom</span><b>Chartered Certified Accountant</b><span>All-India rank 1 · Global rank 18 · Audit &amp; Assurance, Financial Management, IFRS</span></div>
-        <div class="edu-item"><span class="label">Fellow '25 · Perplexity</span><b>Perplexity AI Business Fellow</b><span>Frontier AI adoption for enterprises; beta-tested Comet.</span></div>
-        <div class="edu-item"><span class="label">B.Com '21 · Bengaluru</span><b>St Joseph's College of Commerce</b><span>Rank 1 of 300 · Finance &amp; International Business · Director, Entrepreneurship Cell</span></div>
+      <div class="sec-head"><h2 id="acad-h">Education &amp; certifications</h2></div>
+      <ul class="edu">
+        <li><div><b>Cornell SC Johnson College of Business</b><span>MBA · Merit scholar · Applied AI Practicum</span></div><em>2025 – 2027</em></li>
+        <li><div><b>St Joseph's College of Commerce</b><span>B.Com, Finance &amp; International Business · Rank 1 of 300</span></div><em>2018 – 2021</em></li>
+        <li><div><b>ACCA charter holder</b><span>All-India rank 1 · Global rank 18 · IFRS, Audit, Financial Management</span></div><em>2024</em></li>
+        <li><div><b>Perplexity AI Business Fellow</b><span>Enterprise AI adoption · Beta-tested Comet</span></div><em>2025</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="next" aria-labelledby="next-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="next-h">What's next</h2><span class="label">Operator · FinTech, SaaS &amp; AI</span></div>
+      <p class="thesis">Building companies from the operating seat: <span>strategy, go-to-market and capital</span>.</p>
+      <div class="next">
+        <div class="item">
+          <h3>Scaling UnBound X</h3>
+          <p>Converting pilots into paying partners and executing the 2027 roadmap and monetization model.</p>
+        </div>
+        <div class="item">
+          <h3>Building in New York</h3>
+          <p>Working alongside founders and investors in FinTech, SaaS and AI during a Cornell Spring Term.</p>
+        </div>
+        <div class="item">
+          <h3>Strategy, GTM &amp; Capital</h3>
+          <p>Pricing and packaging, partnership-led GTM, unit economics and capital planning, from the board model to the next raise.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -469,7 +392,7 @@ dialog::backdrop { background: var(--scrim); }
 <footer>
   <div class="wrap">
     <span class="label">Vijetha Hegde · 2026</span>
-    <a class="label" href="#top">Top ↑</a>
+    <a class="label" href="#top">Back to top ↑</a>
   </div>
 </footer>
 
@@ -477,7 +400,7 @@ dialog::backdrop { background: var(--scrim); }
   <div class="dlg-inner">
     <div class="dlg-head">
       <div>
-        <span class="label accent" id="case-co"></span>
+        <span class="label" id="case-co"></span>
         <h3 id="case-title"></h3>
       </div>
       <button class="btn icon" data-close type="button" aria-label="Close case study"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -487,12 +410,10 @@ dialog::backdrop { background: var(--scrim); }
   </div>
 </dialog>
 
-
 <script>
 (function () {
   var root = document.documentElement;
   root.classList.add('js');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* Theme */
   var themeBtn = document.getElementById('theme'), themeIcon = document.getElementById('theme-icon');
@@ -512,92 +433,6 @@ dialog::backdrop { background: var(--scrim); }
   /* Hero entrance */
   var hero = document.getElementById('hero');
   requestAnimationFrame(function () { hero.classList.add('revealed'); });
-
-  /* Journey */
-  var PLANE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>';
-  var CH = [
-    { t: "Overview", line: "Experience spanning institutional banking, venture capital and FinTech M&A.",
-      cards: [["NYC ↔ BLR", "Cross-border operator across two financial hubs."], ["Global exposure", "Managed clients across the US, Europe and Singapore."], ["Cornell MBA", "Class of 2027."]] },
-    { t: "Finance core", line: "Top-ranked chartered accountant with a finance degree.",
-      cards: [["ACCA", "All-India rank 1 · Global rank 18."], ["Rank 1", "Out of 300, finance major."], ["Financial institutions", "Banking, audit and FI experience across Goldman Sachs and J.P. Morgan."]] },
-    { t: "Execution", line: "Measurable outcomes across established organizations.",
-      cards: [["$470mm+", "Transactions executed; 140+ clients managed; Analyst → Senior Analyst in 10 months.", "Goldman Sachs"],
-              ["Published thesis", "1,600+ unicorns analyzed; covered by Fortune.", "Antler", "https://drive.google.com/file/d/1fjydTEuceercUgFAryERxJDfjTfsidTd/view"],
-              ["$9.0bn+", "Deal execution experience; 100+ FinTech companies reviewed.", "J.P. Morgan, NY"]] }
-  ];
-  var idx = 0;
-  var tabs = document.getElementById('j-tabs'), body = document.getElementById('j-body');
-  var line = document.getElementById('j-line'), stats = document.getElementById('j-stats');
-  CH.forEach(function (c, i) {
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'j-tab';
-    b.setAttribute('role', 'tab'); b.id = 'j-tab-' + i;
-    b.innerHTML = (c.icon || '') + '<span></span><i class="j-prog" aria-hidden="true"></i>';
-    b.querySelector('span').textContent = c.t;
-    b.addEventListener('click', function () { go(i); });
-    tabs.appendChild(b);
-  });
-  function render(i) {
-    var c = CH[i];
-    line.textContent = c.line;
-    stats.innerHTML = '';
-    if (c.groups) {
-      c.groups.forEach(function (g) {
-        var d = document.createElement('div'); d.className = 'j-stat j-group';
-        var o = document.createElement('small'); o.textContent = g.co; d.appendChild(o);
-        g.items.forEach(function (k) {
-          var it = document.createElement('div'); it.className = 'j-item';
-          var b = document.createElement('b'); b.textContent = k[0];
-          var sp = document.createElement('span'); sp.textContent = k[1];
-          it.appendChild(b); it.appendChild(sp); d.appendChild(it);
-        });
-        stats.appendChild(d);
-      });
-    } else c.cards.forEach(function (k) {
-      var d = document.createElement('div'); d.className = 'j-stat';
-      if (k[2]) { var o = document.createElement('small'); o.textContent = k[2]; d.appendChild(o); }
-      var b = document.createElement('b');
-      if (k[3]) { var a = document.createElement('a'); a.href = k[3]; a.target = '_blank'; a.rel = 'noopener'; a.className = 'j-link'; a.textContent = k[0] + ' ↗'; b.appendChild(a); } else b.textContent = k[0];
-      var sp = document.createElement('span'); sp.textContent = k[1];
-      d.appendChild(b); d.appendChild(sp); stats.appendChild(d);
-    });
-    Array.prototype.forEach.call(tabs.children, function (t, j) {
-      t.setAttribute('aria-selected', j === i ? 'true' : 'false');
-      t.tabIndex = j === i ? 0 : -1;
-    });
-    body.setAttribute('aria-labelledby', 'j-tab-' + i);
-    var cur = tabs.children[i];
-    if (cur) {
-      var tl = tabs.scrollLeft, tw = tabs.clientWidth;
-      if (cur.offsetLeft < tl || cur.offsetLeft + cur.offsetWidth > tl + tw) tabs.scrollLeft = cur.offsetLeft - 8;
-      if (!reduce) {
-        Array.prototype.forEach.call(tabs.querySelectorAll('.j-prog'), function (pg) { pg.classList.remove('run'); });
-        var pg = cur.querySelector('.j-prog'); void pg.offsetWidth; pg.classList.add('run');
-      }
-    }
-  }
-  function go(i) {
-    idx = (i + CH.length) % CH.length;
-    if (reduce) { render(idx); return; }
-    body.classList.add('out');
-    setTimeout(function () { render(idx); body.classList.remove('out'); }, 380);
-  }
-  render(0);
-  tabs.addEventListener('animationend', function (e) { if (e.target.classList.contains('j-prog')) go(idx + 1); });
-  document.getElementById('prev').addEventListener('click', function () { go(idx - 1); });
-  document.getElementById('next-ch').addEventListener('click', function () { go(idx + 1); });
-
-  /* Select work highlight */
-  var workCards = Array.prototype.slice.call(document.querySelectorAll('.card[data-case]'));
-  var lit = 0, workGrid = document.querySelector('.selected'), workHold = false;
-  function light(n) { workCards.forEach(function (c, j) { c.classList.toggle('lit', j === n); }); }
-  if (workCards.length) {
-    light(0);
-    if (!reduce) {
-      workGrid.addEventListener('mouseenter', function () { workHold = true; });
-      workGrid.addEventListener('mouseleave', function () { workHold = false; });
-      setInterval(function () { if (!workHold && !document.hidden) { lit = (lit + 1) % workCards.length; light(lit); } }, 4000);
-    }
-  }
 
   /* Dialogs */
   var lastTrigger = null;
@@ -621,49 +456,49 @@ dialog::backdrop { background: var(--scrim); }
     jpm: {
       co: "J.P. Morgan · Summer 2026",
       title: "LLM-built ARR model for a FinTech carve-out",
-      metrics: [["$9.0bn+", "live sell-side M&A"], ["1,000s", "data room pages processed"], ["Days → hours", "time to a usable revenue build"]],
+      metrics: [["$9.0B+", "live sell-side M&A"], ["1,000s", "data room pages processed"], ["Days → hours", "time to a usable revenue build"]],
       blocks: [
         ["Problem identified", "A FinTech carve-out being sold to strategic technology buyers had disclosure only at segment level. Without a granular revenue view, the team could not credibly value the asset or size buyer synergies."],
         ["Action owned", ["Proposed a bottom-up build instead of a top-down estimate, and owned it end to end.", "Used LLMs to work through several thousand pages of product documentation, API references and contract schedules, mapping the business module by module.", "Tied each module to customer counts, pricing tiers and contract terms to build ARR from the unit level, with every figure traced to a source page.", "Caught a revenue split the model had inferred rather than extracted, and set a two-pass, cite-every-number rule for the rest of the build."]],
         ["Outcome", "The module-level ARR build became the basis of the synergy case that informed board decisions and valuation committee opinions, and cut days of manual extraction to hours."],
         ["Skills built", {tags: ["Bottom-up ARR modeling", "Synergy analysis", "LLM-assisted diligence", "Source verification", "Board-level materials"]}],
-        ["In hindsight", "The verification rule came after the first error. Building it in from the first extraction, and packaging the workflow as a template, would have saved rework and let the rest of the deal team reuse it."]
+        ["Learnings", ["A two-pass, cite-every-number check is what makes LLM output usable in a board deliverable.", "Templating the workflow turns a one-off build into a diligence tool the whole deal team can reuse."]]
       ]
     },
     dap: {
       co: "Goldman Sachs · Digital Assets",
       title: "Launching the Digital Assets Platform with partner banks",
-      metrics: [["$116.0mm", "tokenized securities transacted"], ["3", "new banking partners live"], ["Compressed", "contract execution timeline"]],
+      metrics: [["$116M", "tokenized securities transacted"], ["3", "new banking partners live"], ["Compressed", "contract execution timeline"]],
       blocks: [
         ["Problem identified", "Goldman's blockchain platform needed institutional participants to work. Partner banks were used to settling through local custodians and saw blockchain as crypto risk, so a strong product alone would not get them to transact."],
         ["Action owned", ["Took ownership of partner bank onboarding, from first conversation to first live transaction.", "Mapped who decided at each bank and connected their legal, operations and markets teams across regions.", "Shifted the pitch from technology to the concerns that actually decided adoption: settlement risk, legal certainty and operational fit.", "Drove contract execution to close on a compressed timeline."]],
-        ["Outcome", "Three new banking partners onboarded and through their first transactions, totaling $116.0mm in tokenized securities on the platform."],
+        ["Outcome", "Three new banking partners onboarded and through their first transactions, totaling $116M in tokenized securities on the platform."],
         ["Skills built", {tags: ["New product GTM", "Institutional partnerships", "Stakeholder mapping", "Contract execution", "Tokenization"]}],
-        ["In hindsight", "Each bank was onboarded largely from scratch. Turning the first onboarding into a standard legal and operations checklist would have made the second and third banks faster and the process easier to scale."]
+        ["Learnings", ["Banks adopt new infrastructure on settlement risk and legal certainty, not on the technology.", "A standard legal and operations checklist turns each new partner from a project into a process."]]
       ]
     },
     centrl: {
       co: "Goldman Sachs · Third-party risk",
       title: "Automating third-party due diligence",
-      metrics: [["95%", "efficiency gain on control checks"], ["6 → 3", "months per review cycle"], ["30%", "lower headcount required"]],
+      metrics: [["95%", "efficiency gain on control checks"], ["6 → 3", "months per review cycle"], ["30%", "less manual staffing"]],
       blocks: [
         ["Problem identified", "Annual diligence on ~140 banks and custodians ran on Excel: ~500 control checks, the same questions and documents (10-Ks, audit reports, policies) reviewed one institution at a time, with no comparison across banks or years. A five-person team needed six months per cycle. Nobody had asked for it to change."],
         ["Action owned", ["Spotted the repetition, mapped the workflow and its bottlenecks with the review team, and built the business case.", "Framed it around risk (lower error rates, shorter windows for issues to go unnoticed) before cost, which won sponsorship and dedicated time.", "Brought in CENTRL and moved the process onto one platform: standard responses, cross-bank comparison, consistent risk scoring and one place for exceptions.", "Ran the internal rollout across legal, compliance and technology, plus leadership roadshows to get it adopted."]],
-        ["Outcome", "Review cycle halved, 95% efficiency gain on control checks and 30% lower headcount required, with the team's time moved to exceptions and judgment calls. Presented at an industry forum of 40 banks."],
+        ["Outcome", "Review cycle halved, 95% efficiency gain on control checks and 30% less manual staffing, with the team's time moved to exceptions and judgment calls. Presented at an industry forum of 40 banks."],
         ["Skills built", {tags: ["Process redesign", "Business case building", "Vendor management", "Change management", "Regulatory controls"]}],
-        ["In hindsight", "The first version of the case was built largely alone, and a senior stakeholder pushed back hard. Making him a reviewer from day one, and testing on live files earlier, would have shortened the path to approval."]
+        ["Learnings", ["Leading with risk, then cost, secured sponsorship and dedicated time.", "Bringing the toughest stakeholder in as a reviewer from day one, and piloting on live files, shortens approval."]]
       ]
     },
     antler: {
       co: "Antler · Bengaluru, 2025",
-      title: "Unicorn founder thesis",
+      title: "New founder scouting channels from unicorn data",
       metrics: [["1,600+", "global unicorns analyzed"], ["12%", "more outbound sourcing channels"], ["Fortune", "coverage of the published report"]],
       blocks: [
         ["Problem identified", "Sourcing was relationship-led and narrow, and there was no data on which founder traits and talent clusters actually predicted outcomes. The study was self-initiated."],
         ["Action owned", ["Designed the question and built a dataset of 1,600+ global unicorns from public sources.", "Tested founder traits and talent clusters against outcomes to find where the team was not looking.", "Worked with Antler's co-founder and CBO, Fridtjof Berge, and defended the method when partners challenged the sample."]],
-        ["Outcome", "Outbound deal sourcing channels expanded by 12%, and the findings fed the AI-led investment playbook that directed $1.9mm into six deals. The report was published and covered by Fortune magazine.", {href: "https://www.linkedin.com/feed/update/urn:li:activity:7414712915926159360/", text: "Read the coverage ↗"}],
+        ["Outcome", "Outbound deal sourcing channels expanded by 12%, and the findings fed the AI-led investment playbook that directed $1.9M into six deals. The report was published and covered by Fortune magazine.", {href: "https://fortune.com/2026/01/07/25-is-the-new-30-gen-z-ai-unicorn-founders-antler-venture-capital/", text: "Read the Fortune coverage ↗"}],
         ["Skills built", {tags: ["Market research", "Data analysis", "Founder evaluation", "Investment thesis", "Published research"]}],
-        ["In hindsight", "The study only covers companies that succeeded, so it carries survivorship bias. Building a comparison set from the same cohorts at the start would have made the findings stronger."]
+        ["Learnings", ["Founder-pattern data opened sourcing channels that relationships alone had missed.", "Benchmarking winners against a same-cohort control set is what makes the thesis defensible."]]
       ]
     }
   };
@@ -690,16 +525,6 @@ dialog::backdrop { background: var(--scrim); }
   Array.prototype.forEach.call(document.querySelectorAll('.card[data-case]'), function (btn) {
     btn.addEventListener('click', function () { openCase(btn.getAttribute('data-case'), btn); });
   });
-
-  /* Keyboard */
-  document.addEventListener('keydown', function (e) {
-    if (document.querySelector('dialog[open]')) return;
-    var tag = (e.target && e.target.tagName) || '';
-    if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
-    if (e.key === 'ArrowRight') go(idx + 1);
-    else if (e.key === 'ArrowLeft') go(idx - 1);
-  });
-
 })();
 </script>
 
